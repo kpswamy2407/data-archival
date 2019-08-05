@@ -1,0 +1,30 @@
+{
+	"database_config":
+		{
+			"one": 
+			{
+				"mysql_source_username":         "root",
+				"mysql_source_password":         "",
+				"mysql_source_host":             "127.0.0.1",
+				"mysql_source_port":      "3307",
+				"mysql_source_database":        "one",
+				"mysql_destination_username":"root",
+				"mysql_destination_password":"",
+				"mysql_destination_host":"127.0.0.1",
+				"mysql_destination_port": "3307",
+				"mysql_destination_database":   "one"
+					
+			}
+		},
+	"table_config":{
+			"one": {
+				"table1":{
+					"source_table":      "table1",
+					"destination_table": "backup_table1",
+					"create_destination_table_if_not_exists": "yes",
+					"condition":         "id>1",
+					"related_tables":	""
+				}	
+			}
+	}
+}
